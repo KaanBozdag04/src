@@ -1,0 +1,64 @@
+// Definiera Student-klassen
+public class Student {
+    // Instansvariabler
+    private String fornamn;
+    private String efternamn;
+    private String skola;
+    private int alder;
+
+    // Konstruktor för att skapa en Student med värden
+    public Student(String fornamn, String efternamn, String skola, int alder) {
+        this.fornamn = fornamn;
+        this.efternamn = efternamn;
+        this.skola = skola;
+        this.alder = alder;
+    }
+
+    // Getter-metoder för att hämta värdena för instansvariablerna
+    public String getFornamn() {
+        return fornamn;
+    }
+
+    public String getEfternamn() {
+        return efternamn;
+    }
+
+    public String getSkola() {
+        return skola;
+    }
+
+    public int getAlder() {
+        return alder;
+    }
+
+    // Setter-metoder om du vill ändra värdena senare (valfritt)
+    public void setFornamn(String fornamn) {
+        this.fornamn = fornamn;
+    }
+
+    public void setEfternamn(String efternamn) {
+        this.efternamn = efternamn;
+    }
+
+    public void setSkola(String skola) {
+        this.skola = skola;
+    }
+
+    public void setAlder(int alder) {
+        this.alder = alder;
+    }
+}
+
+// Main-klassen där vi skapar ett Student-objekt
+public class Main {
+    public static void main(String[] args) {
+        // Skapa ett objekt av Student och tilldela värden till instansvariablerna
+        Student student = new Student("Anna", "Svensson", "Lund Universitet", 22);
+
+        // Skriv ut instansvariablernas värden
+        System.out.println("Förnamn: " + student.getFornamn());
+        System.out.println("Efternamn: " + student.getEfternamn());
+        System.out.println("Skola: " + student.getSkola());
+        System.out.println("Ålder: " + student.getAlder());
+    }
+}
