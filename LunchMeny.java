@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Matratt {
+    // test
     // Egenskaper för klassen Matratt
     private String namn;
     private double pris;
